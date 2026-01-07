@@ -1,0 +1,158 @@
+{
+  general: {
+    // Добавить в опции Vanilla §7* (Add to Vanilla's Options)
+    // Добавлять ли в параметры ванильной игры кнопку, открывающую экран конфигурации WTHIT. §7* (Whether to add a button to vanilla game's options that opens WTHIT config screen)
+    // Значение по умолчанию: [false] §7* (Default value: [%s])
+    vanillaOptions: false,
+    // Отображать подсказки
+    // Собирать данные и отображать подсказки
+    // Значение по умолчанию: [true] §7* (Default value: [%s])
+    displayTooltip: true,
+    // Умные данные
+    // Основная информация скрыта, пока вы не пригнетесь
+    // Значение по умолчанию: [false] §7* (Default value: [%s])
+    shiftForDetails: false,
+    // Не упоминать о детялях при приседании
+    // Скрыть текст "Присядьте для деталей" если соответствующая опция включена
+    // Значение по умолчанию: [false] §7* (Default value: [%s])
+    hideShiftText: false,
+    // Режим отображения
+    // Поведение всплывающей подсказки
+    // Переключать: включать и выключать подсказку соответствующей клавишей
+    // Удерживать: всплывающая подсказка будет отображаться до тех пор, пока зажата соответствующая клавиша
+    // Значение по умолчанию: [TOGGLE] §7* (Default value: [%s])
+    // Доступные значения: [HOLD_KEY, TOGGLE] §7* (Available values: [%s])
+    displayMode: "TOGGLE",
+    // Скрыть при списке игроков
+    // Скрывает подсказки при открытом списке игроков
+    // Значение по умолчанию: [true] §7* (Default value: [%s])
+    hideFromPlayerList: true,
+    // Скрыть при отладке
+    // Скрывает подсказки во время режима отладки
+    // Значение по умолчанию: [true] §7* (Default value: [%s])
+    hideFromDebug: true,
+    // Включить TTS
+    // Читает названия блоков и существ используя синтез речи
+    // Значение по умолчанию: [false] §7* (Default value: [%s])
+    enableTextToSpeech: false,
+    // Лимит запросов
+    // Сколько миллисекунд должно пройти до следующего запроса к серверу
+    // Должно быть как минимум 250 миллисекунд
+    // Значение по умолчанию: [250] §7* (Default value: [%s])
+    rateLimit: 250
+  },
+  overlay: {
+    position: {
+      align: {
+        // Значение по умолчанию: [CENTER] §7* (Default value: [%s])
+        // Доступные значения: [LEFT, CENTER, RIGHT] §7* (Available values: [%s])
+        x: "CENTER",
+        // Значение по умолчанию: [TOP] §7* (Default value: [%s])
+        // Доступные значения: [TOP, MIDDLE, BOTTOM] §7* (Available values: [%s])
+        y: "TOP"
+      },
+      anchor: {
+        // Значение по умолчанию: [CENTER] §7* (Default value: [%s])
+        // Доступные значения: [LEFT, CENTER, RIGHT] §7* (Available values: [%s])
+        x: "CENTER",
+        // Значение по умолчанию: [TOP] §7* (Default value: [%s])
+        // Доступные значения: [TOP, MIDDLE, BOTTOM] §7* (Available values: [%s])
+        y: "TOP"
+      },
+      // Смещение
+      // Значение по умолчанию: [0] §7* (Default value: [%s])
+      x: 0,
+      // Значение по умолчанию: [0] §7* (Default value: [%s])
+      y: 0,
+      // Перекрытие босс-бара
+      // Если Нет, то всплывающая подсказка будет двигаться вниз при любом активном босс-баре.
+      // Влияет только на выравнивание по центру вверху.
+      // Значение по умолчанию: [false] §7* (Default value: [%s])
+      bossBarsOverlap: false
+    },
+    color: {
+      // Прозрачность
+      // Значение по умолчанию: [204] §7* (Default value: [%s])
+      backgroundAlpha: 204,
+      // Custom Themes
+      themes: [],
+      // Тема
+      // Значение по умолчанию: [waila:vanilla] §7* (Default value: [%s])
+      activeTheme: "waila:vanilla"
+    },
+    // Размер
+    // Насколько большой будет подсказка
+    // 1.0 это стандарное значение
+    // Значение по умолчанию: [1.0] §7* (Default value: [%s])
+    scale: 1.0,
+    // Лимит FPS для подсказки
+    // Снижает частоту отрисовки подсказки для общего увеличения FPS
+    // Установите 0 чтобы снять лимит
+    // Значение по умолчанию: [30] §7* (Default value: [%s])
+    fps: 30
+  },
+  // Text formatters
+  formatter: {
+    // Значение по умолчанию: [§9§o%s] §7* (Default value: [%s])
+    modName: "§9§o%s",
+    // Значение по умолчанию: [§f%s] §7* (Default value: [%s])
+    blockName: "§f%s",
+    // Значение по умолчанию: [§f%s] §7* (Default value: [%s])
+    fluidName: "§f%s",
+    // Значение по умолчанию: [§f%s] §7* (Default value: [%s])
+    entityName: "§f%s",
+    // Значение по умолчанию: [§8%s] §7* (Default value: [%s])
+    registryName: "§8%s",
+    // 
+    styles: {
+      // 
+      "§f%s": {
+        // 
+        f_131101_: {
+          // 
+          f_131257_: 16777215,
+          // 
+          f_131258_: "white"
+        },
+        // 
+        f_131102_: false,
+        // 
+        f_131103_: false,
+        // 
+        f_131104_: false,
+        // 
+        f_131105_: false,
+        // 
+        f_131106_: false,
+        // 
+        f_131107_: null,
+        // 
+        f_131108_: null,
+        // 
+        f_131109_: null,
+        // 
+        f_131110_: null
+      }
+    }
+  },
+  keyBinds: {
+    // Открыть конфиг
+    // Значение по умолчанию: [key.keyboard.unknown] §7* (Default value: [%s])
+    openConfig: "key.keyboard.unknown",
+    // Отображать оверлей
+    // Значение по умолчанию: [key.keyboard.unknown] §7* (Default value: [%s])
+    showOverlay: "key.keyboard.unknown",
+    // Отображать жидкости
+    // Значение по умолчанию: [key.keyboard.unknown] §7* (Default value: [%s])
+    toggleLiquid: "key.keyboard.unknown",
+    // Отображать применение в рецептах
+    // Значение по умолчанию: [key.keyboard.unknown] §7* (Default value: [%s])
+    showRecipeInput: "key.keyboard.unknown",
+    // Отображать рецепты
+    // Значение по умолчанию: [key.keyboard.unknown] §7* (Default value: [%s])
+    showRecipeOutput: "key.keyboard.unknown"
+  },
+  // Internal value, DO NOT TOUCH!
+  // Значение по умолчанию: [0] §7* (Default value: [%s])
+  configVersion: 1
+}

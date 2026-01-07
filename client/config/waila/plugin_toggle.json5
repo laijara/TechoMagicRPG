@@ -1,0 +1,12 @@
+{
+  "treechop:plugin": true,
+  "waila:core": true,
+  "waila:vanilla": true,
+  "waila:harvest": true,
+  "waila:extra": true,
+  "waila:forge": true,
+  "agricraft:plugin": true,
+  "ae2:wthit": true,
+  "vampirism_integrations:plugin": true,
+  "balm:wthit": true
+}
