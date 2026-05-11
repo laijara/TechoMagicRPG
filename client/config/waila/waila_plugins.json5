@@ -1,4 +1,15 @@
 {
+  vampirism: {
+    // config.waila.plugin_vampirism.show_creature_info
+    // Значение по умолчанию: [true] §7* (Default value: [%s])
+    show_creature_info: true,
+    // config.waila.plugin_vampirism.show_player_info
+    // Значение по умолчанию: [true] §7* (Default value: [%s])
+    show_player_info: true,
+    // config.waila.plugin_vampirism.blood.long_max
+    // Значение по умолчанию: [100] §7* (Default value: [%s])
+    "blood.long_max": 100
+  },
   treechop: {
     // Block counts
     // Значение по умолчанию: [true] §7* (Default value: [%s])
